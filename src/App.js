@@ -1,4 +1,5 @@
 import NavBar from "./compnents/NavBar";
+import MusicForm from "./compnents/MusicForm";
 import logo from "./images/logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -12,6 +13,7 @@ function App() {
           <div className="row">
             <div className="col-6 ">
               <NavBar />
+              <MusicForm />
             </div>
           </div>
         </div>
