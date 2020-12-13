@@ -1,14 +1,16 @@
 let size = 8;
-let space = " ";
-let pound = "#";
-let nextLine = "\n";
 
-function ChessBoard() {
-  for (let i = 0; i < size; i++) {
-    if (i % 2 == 0) {
-      console.log(space, pound, space, pound, space, pound, space, pound);
+let board = "";
+
+for (let y = 0; y < size; y++) {
+  for (let x = 0; x < size; x++) {
+    if ((x + y) % 2 == 0) {
+      board += " ";
     } else {
-      console.log(pound, space, pound, space, pound, space, pound);
+      board += "#";
     }
   }
+  board += "\n";
 }
+
+console.log(board);
