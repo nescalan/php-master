@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/PracticasReactApp/primerEjercicio/hackernews/.eslintcache
 
 # testing
 /coverage
