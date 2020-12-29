@@ -1,0 +1,47 @@
+.container {
+  width: 40%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#w3-exerciseform {
+  padding: 20px;
+  margin: 32px -20px;
+  background-color: #555555;
+  padding: 16px;
+  color: #ffffff;
+}
+
+.exercisewindow {
+  background-color: #ffffff;
+  padding: 16px;
+  color: #000000;
+}
+
+.exerciseprecontainer {
+  background-color: #f1f1f1;
+  padding: 16px;
+  font-size: 120%;
+  font-family: Consolas, "Courier New", Courier, monospace;
+}
+
+.pre {
+  background-color: transparent;
+  border: none;
+}
+
+.pre__input {
+  width: 297px;
+}
+
+.w3-btn {
+  text-decoration: none !important;
+  color: #ffffff;
+  background-color: #4caf50;
+}
+
+.w3-margin-bottom {
+  margin-bottom: 16px !important;
+}
