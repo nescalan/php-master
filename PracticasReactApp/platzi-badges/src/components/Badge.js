@@ -15,17 +15,17 @@ class Badge extends Component {
         </div>
 
         <div className="Badge__section-name">
-          <img className="Badge__avatar" src={marcoImage} alt="" />
+          <img className="Badge__avatar" src={this.props.avaratUrl} alt="" />
           <h1>
-            Ing. Nelson <br /> Gonzalez
+            {this.props.firstName} <br /> {this.props.lastName}
           </h1>
         </div>
 
-        <div className="Badge__footer">
-          <p>Frontend Engineer</p>
-          <p>@lurkie</p>
+        <div className="Badge__section-info">
+          <h3>{this.props.jobTitle}</h3>
+          <div>@{this.props.twitter}</div>
         </div>
-        <div>#platziconf</div>
+        <div className="Badge__footer">#platziconf</div>
       </div>
     );
   }
