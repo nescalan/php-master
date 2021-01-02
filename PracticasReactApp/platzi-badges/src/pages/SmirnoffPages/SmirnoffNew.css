@@ -1,0 +1,16 @@
+.conteiner__banner {
+  background-color: white;
+  color: tomato;
+  margin-bottom: 20px;
+}
+.width {
+  width: 18rem;
+}
+
+.img-width {
+  width: 25%;
+}
+
+.card__text-size {
+  font-size: smaller;
+}

@@ -2,9 +2,9 @@ import React, { Component } from "react";
 
 import "./styles/BadgeNew.css";
 import header from "../images/badge-header.svg";
-import Navbar from "../components/Navbar";
-
 import Badege from "../components/Badge";
+import BadgeForm from "../components/BadgeForm";
+import Navbar from "../components/Navbar";
 
 class BadgeNew extends Component {
   state = {};
@@ -18,7 +18,7 @@ class BadgeNew extends Component {
 
         <div className="container">
           <div className="row">
-            <div className="col">
+            <div className="col-6">
               <Badege
                 firstName="Ing. Nelson"
                 lastName="Gonzalez"
@@ -26,6 +26,9 @@ class BadgeNew extends Component {
                 jobTitle="Frontend Engineer"
                 avatarUrl="https://i.postimg.cc/wvFNQkkn/Marco.jpg"
               />
+            </div>
+            <div className="col-6">
+              <BadgeForm />
             </div>
           </div>
         </div>
