@@ -2,43 +2,68 @@ import React, { Component } from "react";
 
 class FormSmirnoff extends Component {
   state = {};
+  handleOnChange = (e) => {
+    console.log({
+      name: e.target.name,
+      value: e.target.value,
+    });
+  };
+
+  handleOnClick = (e) => {
+    console.log("button was clicked");
+  };
+
+  handleOnSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form was submited");
+  };
+
   render() {
     return (
       <div>
-        <form>
-          <div class="form-group">
+        <form onSubmit={this.handleOnSubmit}>
+          <div className="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input
+              onChange={this.handleOnChange}
               type="email"
-              class="form-control"
+              className="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Enter email"
+              name="EmailAddress"
             />
-            <small id="emailHelp" class="form-text text-muted">
+            <small id="emailHelp" className="form-text text-muted">
               We'll never share your email with anyone else.
             </small>
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <label for="exampleInputPassword1">Password</label>
             <input
+              onChange={this.handleOnChange}
               type="password"
-              class="form-control"
+              className="form-control"
               id="exampleInputPassword1"
               placeholder="Password"
+              name=""
             />
           </div>
-          <div class="form-group form-check">
+          <div className="form-group form-check">
             <input
+              onChange={this.handleOnChange}
               type="checkbox"
-              class="form-check-input"
+              className="form-check-input"
               id="exampleCheck1"
             />
-            <label class="form-check-label" for="exampleCheck1">
+            <label className="form-check-label" for="exampleCheck1">
               Check me out
             </label>
           </div>
-          <button type="submit" class="btn btn-primary">
+          <button
+            onClick={this.handleOnClick}
+            // type="submit"
+            className="btn btn-primary"
+          >
             Submit
           </button>
         </form>
