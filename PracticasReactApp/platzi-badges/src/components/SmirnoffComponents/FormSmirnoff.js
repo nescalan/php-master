@@ -2,19 +2,19 @@ import React, { Component } from "react";
 
 class FormSmirnoff extends Component {
   state = {};
-  handleOnChange = (e) => {
+  handleOnChange = (event) => {
     console.log({
-      name: e.target.name,
-      value: e.target.value,
+      name: event.target.name,
+      value: event.target.value,
     });
   };
 
-  handleOnClick = (e) => {
+  handleOnClick = (event) => {
     console.log("button was clicked");
   };
 
-  handleOnSubmit = (e) => {
-    e.preventDefault();
+  handleOnSubmit = (event) => {
+    event.preventDefault();
     console.log("Form was submited");
   };
 
@@ -23,7 +23,7 @@ class FormSmirnoff extends Component {
       <div>
         <form onSubmit={this.handleOnSubmit}>
           <div className="form-group">
-            <label for="exampleInputEmail1">Email address</label>
+            <label htmlFor="exampleInputEmail1">Email address</label>
             <input
               onChange={this.handleOnChange}
               type="email"
@@ -38,14 +38,14 @@ class FormSmirnoff extends Component {
             </small>
           </div>
           <div className="form-group">
-            <label for="exampleInputPassword1">Password</label>
+            <label htmlFor="exampleInputPassword1">Password</label>
             <input
               onChange={this.handleOnChange}
               type="password"
               className="form-control"
               id="exampleInputPassword1"
               placeholder="Password"
-              name=""
+              name="Password"
             />
           </div>
           <div className="form-group form-check">
@@ -55,7 +55,7 @@ class FormSmirnoff extends Component {
               className="form-check-input"
               id="exampleCheck1"
             />
-            <label className="form-check-label" for="exampleCheck1">
+            <label className="form-check-label" htmlFor="exampleCheck1">
               Check me out
             </label>
           </div>

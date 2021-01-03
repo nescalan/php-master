@@ -22,8 +22,9 @@ const BadgeSmirnoff = (props) => {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <h6> {props.firstPrice} </h6>
-              <h6> {props.secondPrice} </h6>
+              <small> {props.firstPrice} </small>
+              <br />
+              <small> {props.secondPrice} </small>
               <a href={drizlyURL} className="btn btn-primary">
                 Go somewhere
               </a>
