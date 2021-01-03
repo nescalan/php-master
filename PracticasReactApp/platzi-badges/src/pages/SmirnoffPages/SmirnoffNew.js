@@ -1,7 +1,7 @@
 import React from "react";
 
-import smirnoffBanner from "../../images/smirnoff/smirnoff-banner.png";
 import NavbarSmirnoff from "../../components/SmirnoffComponents/NavbarSmirnoff";
+import HeroSmirnoff from "../../components/SmirnoffComponents/SmirnofHero";
 import BadgeSmirnoff from "../../components/SmirnoffComponents/BadgeSmirnoff";
 import FormSmirnoff from "../../components/SmirnoffComponents/FormSmirnoff";
 
@@ -11,9 +11,7 @@ const SmirnoffNew = () => {
   return (
     <div>
       <NavbarSmirnoff />
-      <div className="container conteiner__banner">
-        <img className="img-fluid" src={smirnoffBanner} alt="Logo" />
-      </div>
+      <HeroSmirnoff />
 
       <div className="container">
         <div className="row">
@@ -24,7 +22,7 @@ const SmirnoffNew = () => {
               secondPrice="1.750l plastic bottle - from $22.99 "
             />
           </div>
-          <div className="col-6">
+          <div className="col-4">
             <FormSmirnoff />
           </div>
         </div>

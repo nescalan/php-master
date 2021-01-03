@@ -1,6 +1,7 @@
 import React from "react";
 
 import smirnoffLogo from "../../images/smirnoff/smirnoff-logo.svg";
+import "./styles/BadgeSmirnoff.css";
 
 const BadgeSmirnoff = (props) => {
   const drizlyURL =
