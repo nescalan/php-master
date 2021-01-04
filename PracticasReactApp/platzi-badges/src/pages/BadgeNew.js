@@ -7,7 +7,15 @@ import BadgeForm from "../components/BadgeForm";
 import Navbar from "../components/Navbar";
 
 class BadgeNew extends Component {
-  state = {};
+  state = { form: {} };
+
+  handleChange = (e) => {
+    this.setState({
+      ...this.state.form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   render() {
     return (
       <div>
@@ -28,7 +36,10 @@ class BadgeNew extends Component {
               />
             </div>
             <div className="col-6">
-              <BadgeForm />
+              <BadgeForm
+                onChange={this.handleChange}
+                formValues={this.state.form}
+              />
             </div>
           </div>
         </div>
