@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import confgLogo from "../images/badge-header.svg";
-import marcoImage from "../images/Marco.jpg";
+// import marcoImage from "../images/Marco.jpg";
 
 import "./styles/Badge.css";
 import "bootstrap/dist/css/bootstrap.css";

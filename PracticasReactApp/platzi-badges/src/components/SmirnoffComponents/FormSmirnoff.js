@@ -3,14 +3,14 @@ import React, { Component } from "react";
 class FormSmirnoff extends Component {
   state = {};
   handleOnChange = (event) => {
-    console.log({
-      name: event.target.name,
-      value: event.target.value,
+    this.setState({
+      [event.target.name]: event.target.value,
     });
   };
 
   handleOnClick = (event) => {
     console.log("button was clicked");
+    console.log(this.state);
   };
 
   handleOnSubmit = (event) => {
@@ -32,6 +32,7 @@ class FormSmirnoff extends Component {
               aria-describedby="emailHelp"
               placeholder="Enter email"
               name="EmailAddress"
+              value={this.state.EmailAddress}
             />
             <small id="emailHelp" className="form-text text-muted">
               We'll never share your email with anyone else.
@@ -46,6 +47,7 @@ class FormSmirnoff extends Component {
               id="exampleInputPassword1"
               placeholder="Password"
               name="Password"
+              value={this.state.Password}
             />
           </div>
           <div className="form-group form-check">
@@ -59,11 +61,7 @@ class FormSmirnoff extends Component {
               Check me out
             </label>
           </div>
-          <button
-            onClick={this.handleOnClick}
-            // type="submit"
-            className="btn btn-primary"
-          >
+          <button onClick={this.handleOnClick} className="btn btn-primary">
             Submit
           </button>
         </form>
