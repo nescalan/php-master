@@ -17,6 +17,7 @@ class BadgeForm extends Component {
   handleOnSubmit = (e) => {
     e.preventDefault();
     console.log("handleOnSubmit stops the submit");
+    console.log(this.state);
   };
 
   render() {
