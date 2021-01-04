@@ -3,10 +3,10 @@ import React, { Component } from "react";
 class BadgeForm extends Component {
   state = {};
 
-  handleChange = (e) => {
+  handleOnChange = (e) => {
     // console.log({ name: e.target.name, value: e.target.value });
     this.setState({
-      firstName: e.target.value,
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -28,10 +28,51 @@ class BadgeForm extends Component {
           <div className="form-group">
             <label>First Name</label>
             <input
-              onChange={this.handleChange}
+              onChange={this.handleOnChange}
               className="form-control"
               type="text"
               name="firstName"
+              value={this.state.firstName}
+            />
+          </div>
+          <div className="form-group">
+            <label>Last Name</label>
+            <input
+              onChange={this.handleOnChange}
+              className="form-control"
+              type="text"
+              name="lastName"
+              value={this.state.lastName}
+            />
+          </div>
+          <div className="form-group">
+            <label>Email</label>
+            <input
+              onChange={this.handleOnChange}
+              className="form-control"
+              type="email"
+              name="email"
+              value={this.state.email}
+            />
+          </div>
+          <div className="form-group">
+            <label>Job Title</label>
+            <input
+              onChange={this.handleOnChange}
+              className="form-control"
+              type="text"
+              name="jobTitle"
+              value={this.state.value}
+            />
+          </div>
+          <div className="form-group">
+            <label>Twitter</label>
+            <input
+              onChange={this.handleOnChange}
+              className="form-control"
+              type="text"
+              name="twitter"
+              value={this.state.twitter}
             />
           </div>
           <button onClick={this.handleOnClick} className="btn btn-primary">
