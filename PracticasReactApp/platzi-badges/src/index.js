@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import BadgeNew from "./pages/BadgeNew";
 import Badges from "./pages/Badges";
 // import SmirnoffNew from "./pages/SmirnoffPages/SmirnoffNew";
 
