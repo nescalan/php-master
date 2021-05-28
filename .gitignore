@@ -1,2 +1,7 @@
-node_modules
-/PracticasReactApp/primerEjercicio/hackernews/node_modules
+.idea/
+._.DS_Store
+.DS_Store
+vendor/
+._composer.phar
+composer.phar
+public/uploads
