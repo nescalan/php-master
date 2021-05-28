@@ -23,7 +23,7 @@ body {
 }
 
 .wraper {
-  width: 80%;
+  width: 60%;
   height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,7 +31,7 @@ body {
 }
 
 .wraper .container-left {
-  width: 50%;
+  width: 70%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,7 +48,7 @@ body {
 }
 
 .wraper .container-left__info {
-  width: 50%;
+  width: 80%;
   height: 30vh;
   color: #fff;
 }
@@ -90,7 +90,7 @@ body {
 }
 
 .wraper .container-right .container-left__singin {
-  width: 50%;
+  width: 80%;
   height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,20 +105,20 @@ body {
 .wraper .container-right .container-left__singin h2 {
   width: 100px;
   height: 3px;
-  margin: 30px auto;
+  margin: 15px auto;
   background-color: #2578f5;
 }
 
 .wraper .container-right .container-left__singin input {
-  height: 25px;
-  margin: 30px 0;
+  height: 20px;
+  margin: 15px 0;
   text-align: center;
   border: none;
   border-bottom: 1px solid grey;
 }
 
 .wraper .container-right .container-left__singin a {
-  width: 200px;
+  width: 150px;
   color: #fff;
   background-color: #2578f5;
 }
