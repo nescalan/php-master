@@ -1,3 +1,8 @@
+<?php  
+$var1 = 1;
+$name = 'Ing. Nelson Gonzalez';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,7 +36,7 @@
           />
         </div>
         <div class="col">
-          <h1><?php echo 'Hector Benitez'; ?></h1>
+          <h1><?php echo $name; ?></h1>
           <h2>PHP Developer</h2>
           <ul>
             <li>Mail: hector@mail.com</li>
