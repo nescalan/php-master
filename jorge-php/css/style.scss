@@ -95,10 +95,10 @@ body {
       input {
         height: 20px;
         margin: 15px 0;
-        // color: $color-secundario;
         text-align: center;
         border: none;
         border-bottom: 1px solid grey;
+        outline: none; //Elimina el borde en el imput
       }
       a {
         width: 150px;

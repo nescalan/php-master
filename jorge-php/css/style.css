@@ -115,6 +115,7 @@ body {
   text-align: center;
   border: none;
   border-bottom: 1px solid grey;
+  outline: none;
 }
 
 .wraper .container-right .container-left__singin a {
