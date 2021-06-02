@@ -1,13 +1,3 @@
-<?php 
-$arreglo = [
-    'keyStr1' => 'lado',
-            0 => 'ledo',
-    
-    'keyStr2' => 'lido',
-            1 =>'lodo',
-            2 => 'ludo',
-    ];
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,10 +9,17 @@ $arreglo = [
 <body>
     <h1>Imprimir un mensaje con Arreglos</h1>
     <?php
-        for ($f = 0; $f <= 2; $f++) {
-            echo $arreglo[$f];
-              echo "<br>";
-          }
+
+        $arreglo = [
+            'keyStr1' => 'lado',
+                    0 => 'ledo',
+            
+            'keyStr2' => 'lido',
+                    1 =>'lodo',
+                    2 => 'ludo',
+            ];
+
+            echo "$arreglo[keyStr1], $arreglo[0], $arreglo[keyStr2], $arreglo[1], $arreglo[2]<br>";
     ?>
     
 </body>
