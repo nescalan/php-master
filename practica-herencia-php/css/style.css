@@ -1,0 +1,80 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #0b0c0c;
+}
+
+body {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.navbar {
+  width: 80%;
+  height: 60px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+.navbar .navbar-logo {
+  width: 140px;
+  margin: 0 12px 0 0;
+}
+
+.navbar .navbar-list {
+  width: 275px;
+}
+
+.navbar .navbar-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+.navbar .navbar-list__menu {
+  color: #fff;
+  font-size: large;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-search {
+  width: 256px;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.navbar .navbar-search input {
+  border: none;
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */
