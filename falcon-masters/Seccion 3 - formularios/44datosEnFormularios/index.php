@@ -1,3 +1,11 @@
+<?php
+
+if ($_POST) {
+    echo $_POST['nombre'];
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +15,9 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>44: Enviando datos a mi propia página</h1>
     
-    <form action="recibe.php" method="post" >
+    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
         <input type="text" name="nombre" placeholder="Nombre: " >
         <br>
 
@@ -31,13 +40,6 @@
 
         <input type="submit" value="Enviar">
     </form>
-
-    <?php
-    
-    const NOMBRE = 'Impresion de la constante NELSON por pantalla';
-    echo NOMBRE;
-    
-    ?>
 
 </body>
 </html>
