@@ -1,0 +1,79 @@
+$color-primary: #45dfe4;
+$color-secundary: #218e9b;
+$color-variation: #084551;
+// $color-lightyellow: #fcf5c7;
+$color-lightyellow: #a0ced9;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.3rem;
+  background-image: linear-gradient(
+    to right top,
+    #084551,
+    #136876,
+    #218e9b,
+    #31b6c0,
+    #45dfe4
+  );
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 320px;
+  height: 370px;
+  background-color: #efeefe;
+  border-radius: 20px;
+  & .card-header {
+    width: 320px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: $color-lightyellow;
+    h1 {
+      display: inline;
+    }
+  }
+  & .card-main {
+    width: 320px;
+    height: 100px;
+    text-align: center;
+    label {
+      margin: 10px 0;
+      display: block;
+      font-weight: bold;
+    }
+  }
+  & .card-signin {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+      width: 150px;
+      height: 50px;
+      color: $color-lightyellow;
+      border: none;
+      border-radius: 10px;
+      background-color: #ca2c69;
+    }
+    input:hover {
+      background-color: #ea4c89;
+    }
+  }
+}

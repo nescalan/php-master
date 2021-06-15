@@ -1,0 +1,97 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.3rem;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#084551), color-stop(#136876), color-stop(#218e9b), color-stop(#31b6c0), to(#45dfe4));
+  background-image: linear-gradient(to right top, #084551, #136876, #218e9b, #31b6c0, #45dfe4);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  width: 320px;
+  height: 370px;
+  background-color: #efeefe;
+  border-radius: 20px;
+}
+
+.card .card-header {
+  width: 320px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #a0ced9;
+}
+
+.card .card-header h1 {
+  display: inline;
+  border: 1px solid red;
+}
+
+.card .card-main {
+  width: 320px;
+  height: 100px;
+  text-align: center;
+}
+
+.card .card-main label {
+  margin: 10px 0;
+  display: block;
+  font-weight: bold;
+}
+
+.card .card-signin {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card-signin input {
+  width: 150px;
+  height: 50px;
+  color: #a0ced9;
+  border: none;
+  border-radius: 10px;
+  background-color: #ca2c69;
+}
+
+.card .card-signin input:hover {
+  background-color: #ea4c89;
+}
+/*# sourceMappingURL=style.css.map */
