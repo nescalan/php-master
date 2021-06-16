@@ -1,6 +1,6 @@
 <?php
 
-$errores = '';
+$errores = ''; 
 
 if (isset($_POST['submit'])) {
     $nombre =$_POST['nombre'];
@@ -33,6 +33,10 @@ if (isset($_POST['submit'])) {
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
         <input type="text" name="nombre" placeholder="Nombre: ">
         <input type="email" name="correo" id="" placeholder="Correo: ">
+
+        <?php if(!empty($errores)) : ? >
+
+        
 
         <input type="submit" value="enviar" name="submit">
     </form>
