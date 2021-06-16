@@ -6,15 +6,27 @@ if (isset($_POST['submit'])) {
     $nombre =$_POST['nombre'];
     $correo =$_POST['correo'];
 
-        if (!empty($nombre)) {
-            // $nombre = trim($nombre);
-            // $nombre = htmlspecialchars($nombre);    
-            // $nombre = stripslashes($nombre);
-            $nombre = filter_var($nombre, FILTER_SANITIZE_STRING);
-            echo 'Tu nombre es: ' . $nombre . ' y tu correo es: ' . $correo;
+    if (!empty($nombre)) {
+        // $nombre = trim($nombre);
+        // $nombre = htmlspecialchars($nombre);    
+        // $nombre = stripslashes($nombre);
+        $nombre = filter_var($nombre, FILTER_SANITIZE_STRING);
+        echo 'Tu nombre es: ' . $nombre;
+    } else {
+        $errores .= 'Por favor, agregar un nombre ';
+    }
+
+    if (!empty($correo)) {
+        $correo = filter_var($correo, FILTER_SANITIZE_EMAIL);
+
+        if (!filter_var($correo, FILTER_VALIDATE_EMAIL)) {
+            $errores.= 'Ingresa un correo válido <br />';
         } else {
-            $errores .= 'Por favor, agregar un nombre ';
+            echo 'Tu correo es: ' . $correo;
         }
+    } else {
+        $errores .= 'Por favor, agregar un correo ';
+    }
 }
 
 ?>
@@ -33,6 +45,10 @@ if (isset($_POST['submit'])) {
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
         <input type="text" name="nombre" placeholder="Nombre: ">
         <input type="email" name="correo" id="" placeholder="Correo: ">
+
+        <?php if(!empty($errores)): ?>
+            <div class="error"><?php echo $errores; ?></div>
+        <?php endif;?>
 
         <input type="submit" value="enviar" name="submit">
     </form>
