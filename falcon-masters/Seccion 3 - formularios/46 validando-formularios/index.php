@@ -1,6 +1,6 @@
 <?php
 
-$errores = '';
+$errores = ''; 
 
 if (isset($_POST['submit'])) {
     $nombre =$_POST['nombre'];
@@ -48,7 +48,7 @@ if (isset($_POST['submit'])) {
 
         <?php if(!empty($errores)): ?>
             <div class="error"><?php echo $errores; ?></div>
-        <?php endif;?>
+        <?php endif; ?>
 
         <input type="submit" value="enviar" name="submit">
     </form>
