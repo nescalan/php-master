@@ -46,15 +46,9 @@ if (isset($_POST['submit'])) {
         <input type="text" name="nombre" placeholder="Nombre: ">
         <input type="email" name="correo" id="" placeholder="Correo: ">
 
-<<<<<<< HEAD
-        <?php if(!empty($errores)) : ? >
-
-        
-=======
         <?php if(!empty($errores)): ?>
             <div class="error"><?php echo $errores; ?></div>
-        <?php endif;?>
->>>>>>> 899801b755d8f7be993014da23bcfb1f3922324d
+        <?php endif; ?>
 
         <input type="submit" value="enviar" name="submit">
     </form>
