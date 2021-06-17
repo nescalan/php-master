@@ -27,7 +27,6 @@ form {
   box-shadow: 0 0 3px grey;
   border-top: 4px solid #536dfe;
 }
-
 form input[type="text"],
 form input[type="email"],
 form input[type="password"],
@@ -42,7 +41,6 @@ form textarea {
   font-size: 1em;
   color: #141938;
 }
-
 form input[type="text"]:focus,
 form input[type="email"]:focus,
 form input[type="password"]:focus,
