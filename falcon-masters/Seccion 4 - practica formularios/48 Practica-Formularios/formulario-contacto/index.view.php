@@ -16,6 +16,7 @@
         <input type="text" class="form-control" name="correo" id="correo"  placeholder="Correo: " value="">
         <textarea name="mensaje" class="form-control" id="mensaje" placeholder="Mensaje"></textarea>
 
+         <!-- 4.- Evaluar el botón de submit a través de la variable $errores  -->
         <?php if(!empty($errores)): ?>
             <div class="alert error">
                 <?php echo $errores; ?>
