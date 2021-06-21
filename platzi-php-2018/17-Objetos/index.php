@@ -1,7 +1,6 @@
 <?php
 
 require_once('jobs.php');
-c 
 
 $name = 'Hector Benitez';
 $limitMonths = 2000;

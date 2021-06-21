@@ -7,7 +7,6 @@
 
 // }
 
-<?php
 
 if (isset($_POST['submit'])) {
     echo 'Se enviaron los datos correctamente';
